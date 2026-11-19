@@ -1,0 +1,50 @@
+
+# ===================================
+#          SIMPLE CALCULATOR
+# ===================================
+
+print("==========================")
+print("       PYTHON CALCULATOR")
+print("==========================")
+
+# Taking input from the user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Displaying available operations
+print("\nSelect an Operation:")
+print("1. Addition (+)")
+print("2. Subtraction (-)")
+print("3. Multiplication (*)")
+print("4. Division (/)")
+
+# Taking operator choice
+choice = input("\nEnter your choice (1-4): ")
+
+# Performing calculations
+if choice == "1":
+    result = num1 + num2
+    print("\nResult:", result)
+
+elif choice == "2":
+    result = num1 - num2
+    print("\nResult:", result)
+
+elif choice == "3":
+    result = num1 * num2
+    print("\nResult:", result)
+
+elif choice == "4":
+    if num2 != 0:
+        result = num1 / num2
+        print("\nResult:", result)
+    else:
+        print("\nError: Cannot divide by zero!")
+
+else:
+    print("\nInvalid choice! Please select 1 to 4.")
+
+print("\n========================")
+print("     THANK YOU FOR USING")
+print("       PYTHON CALCULATOR")
+print("==========================")
